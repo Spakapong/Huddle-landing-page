@@ -1,6 +1,6 @@
 body {
     background-color:hsl(257, 40%, 49%);
-    background-image: url(/images/bg-desktop.svg);
+    background-image: url(./images/bg-desktop.svg);
     padding: 20px;
   }
 
@@ -62,4 +62,43 @@ footer {
     padding: 10px;
     border: solid 1px white;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 415px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #head-img {
+        width: 150px;
+    }
+    section {
+        flex-direction: column;
+    }
+    .content {
+        margin: 0;
+        text-align: center;
+    }
+    button{
+        padding: 10px 80px;
+        font-size: 16px;
+    }
+    footer {
+        text-align: center;
+        font-size: 16px;
+        margin: 0;
+    }
+    .foot-message {
+        font-size: 10px;
+    }
+    .foot-icon { 
+        margin: 20px 5px;
+        padding: 5px;
+        height: 16px;
+        width: 16px;
+        text-align: center;
+    }
 }
